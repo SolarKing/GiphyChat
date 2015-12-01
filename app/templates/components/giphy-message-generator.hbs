@@ -1,0 +1,21 @@
+<div class="gmg_wrapper">
+  <div class="text_input">
+      {{textarea focus-out="findTheStuff" value=message}}
+  </div>
+  <div class="gifs_container" tabindex="0">
+    {{#if urlArray}}
+      {{#each urlArray as |gifUrl|}}
+        <button {{action "finishTheTask" gifUrl}} type="button" name="button">
+          <img src={{gifUrl}} alt="" />
+        </button>
+      {{/each}}
+    {{else}}
+      <h1 class="disclaimer_text">Powered by:</h1>
+      <img class="disclaimer_img" src="http://api.giphy.com/img/api_giphy_logo.png" alt="" />
+    {{/if}}
+
+  </div>
+  <div class="submit">
+    <button {{action "finishTheTask"}}>Send</button>
+  </div>
+</div>

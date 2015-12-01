@@ -1,0 +1,151 @@
+.gmg_wrapper {
+  // struct
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  // style
+  .gifs_container {
+    // struct
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 150px;
+    left: 0;
+    overflow-y: scroll;
+    // style
+    background: #f4f4f4;
+
+    &:focus {
+      // struct
+      outline-color: #31BF8A;
+      outline-offset: -5px;
+      outline-style: solid;
+      outline-width: 5px;
+      // style
+    }
+
+    .disclaimer_text {
+      // struct
+      display: block;
+      text-align: center;
+      // style
+    }
+
+    .disclaimer_img {
+      // struct
+      display: block;
+      width: 50%;
+      margin: 10px auto;
+      // style
+    }
+
+    button {
+      // struct
+      float: left;
+      width: 90%;
+      padding: 0;
+      margin: 5% 5% 0;
+      // style
+      border: none;
+
+      &:last-child {
+        // struct
+        margin: 5%;
+        // style
+      }
+
+      &:focus {
+        // struct
+        outline-color: #31BF8A;
+        outline-offset: -5px;
+        outline-style: solid;
+        outline-width: 5px;
+        // style
+      }
+      img {
+        float: left;
+        // struct
+        width:100%;
+        // style
+      }
+    }
+  }
+  .text_input {
+    z-index: 500;
+    // struct
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    left: 0;
+    height: 100px;
+    // style
+    border-top: #c4c4c4 thin solid;
+    textarea {
+      // struct
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+      max-height: 100%;
+      min-height: 100%;
+      height: 100%;
+      padding: 15px;
+      margin: 0;
+      box-sizing: border-box;
+      font-size: 16px;
+      // style
+      border: none;
+
+
+      &:focus {
+        // struct
+        outline-color: #31BF8A;
+        outline-offset: -5px;
+        outline-style: solid;
+        outline-width: 5px;
+        // style
+      }
+    }
+  }
+  .submit {
+    // struct
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+
+    // style
+
+    button {
+      // struct
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      font-size: 16px;
+      // style
+      border: none;
+      border-top: thin #c4c4c4 solid;
+      border-radius: 0;
+      background: white;
+      letter-spacing: 1px;
+      &:focus {
+        // struct
+        outline-color: #31BF8A;
+        outline-offset: -5px;
+        outline-style: solid;
+        outline-width: 5px;
+        // style
+      }
+
+      &:hover {
+        // struct
+        // style
+        background: #31BF8A;
+        color: white;
+      }
+    }
+  }
+}

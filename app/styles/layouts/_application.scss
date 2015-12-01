@@ -1,0 +1,27 @@
+#app_bar {
+  z-index: 900;
+  // struct
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  // style
+  background: white;
+
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.25);
+  box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.25);
+}
+
+#main_view {
+  z-index: 500;
+  // struct
+  position: absolute;
+  top:50px;
+  right:0;
+  bottom: 0;
+  left: 0;
+  // style
+}

@@ -1,0 +1,41 @@
+#control_panel {
+  z-index: 400;
+  // struct
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  // style
+  background: white;
+
+  -webkit-box-shadow: 3px 0px 3px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 3px 0px 3px 0px rgba(0,0,0,0.25);
+  box-shadow: 3px 0px 3px 0px rgba(0,0,0,0.25);
+}
+
+#chat_input {
+  z-index: 300;
+  // struct
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 150px;
+  width: 350px;
+  // style
+  background: #f4f4f4;
+  -webkit-box-shadow: 3px 0px 3px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 3px 0px 3px 0px rgba(0,0,0,0.25);
+  box-shadow: 3px 0px 3px 0px rgba(0,0,0,0.25);
+}
+
+#chat_log {
+  z-index: 200;
+  // struct
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 500px;
+  // style
+}
