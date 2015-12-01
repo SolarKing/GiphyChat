@@ -80,6 +80,8 @@ function Message(text, mediaURL, author) {
 
 export default Ember.Component.extend({
 
+
+
   actions: {
     findTheStuff() {
       var message = this.get('message');
@@ -98,10 +100,18 @@ export default Ember.Component.extend({
     finishTheTask(gifUrl) {
       // console.log(gifUrl);
       var message = new Message(this.get("message"), gifUrl, this.get("author"));
+      // var store = this.get("store");
       console.log(message);
+      this.store.createRecord('message', message);
+      // this.set("store", store);
+      console.log("STORE");
+      console.log(this.get("store"));
+      // this.get('socket').emit('from_client', message);
+
       this.set("message", null);
       this.set("urlArray", null);
-    }
+    },
+
   }
 
 });

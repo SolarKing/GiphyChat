@@ -2,9 +2,11 @@
 
 </div>
 <div id="chat_input">
-  {{#giphy-message-generator author="Anon"}}
+  {{#giphy-message-generator author="Anon" store=store}}
   {{/giphy-message-generator}}
 </div>
 <div id="chat_log">
-
+  {{#each message as |message|}}
+    {{message}}
+  {{/each}}
 </div>

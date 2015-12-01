@@ -25,6 +25,10 @@ app.get("*", function(req, res) {
 
 io.on('connection', function(socket) {
   console.log("a user connected");
+  socket.on('from_client', function(data) {
+    console.log(data);
+    socket.emit('from_server', data);
+  });
 });
 
 server.listen(3000, function() {
